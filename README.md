@@ -1,6 +1,8 @@
-# Porfólio Pessoal
+# Portfólio Pessoal
 
-> Descrição
+![preview](./.github/danielemidio1988.github.io_NLW-eSports_.png)
+
+## Descrição
 
 Muito prazer! Este é meu portfólio pessoal, onde você pode acompanhar meus projetos pessoais e minha trajetória profissional. Seja muito bem vindo. 😁 
 
