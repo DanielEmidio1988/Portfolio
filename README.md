@@ -1,6 +1,6 @@
 # Portfólio Pessoal
 
-![preview](./.github/danielemidio1988.github.io_NLW-eSports_.png)
+![preview](./assets/Icon-readme.png)
 
 ## Descrição
 
