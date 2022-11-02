@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #303030;
+}
+
+a:hover{
+    color: #B5E61D;
+    transition: .5s;    
+}
+
+h1{
+    font-size: 15vh;
+    font-weight: bold;
+}
+
+h2{
+    color: #B5E61D;
+    font-size: 6vh;
+}
+
+h3{
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-menu{
+    margin-top: 5px;
+    display: flex;
+}
+
+.main-logo{
+    width: 10%;
+}
+
+.main-logo img{
+    height: 90px;
+    width: auto;
+    padding-left: 10vh;  
+}
+
+.main-options{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 10vw;
+    padding-left: 10vw  ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PRIMEIRA SEÇÃO */
+.body-welcome{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-text{
+    width: 50%;
+}
+
+.welcome-text p{
+    font-size: 4vh;
+}
+
+.welcome-text span, .portfolio-more span{
+    height: 70px;
+    width: 300px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #B5E61D;
+    border-radius: 30px;
+    background-color: transparent;
+    margin-top: 4vh;
+}
+
+.welcome-text span:hover, .portfolio-more span:hover{
+    background-color:#B5E61D;
+}
+
+.welcome-text span:active, .portfolio-more span:active{
+    border: #D8FB50;
+    background-color: #D8FB50;
+}
+
+.welcome-text span a:hover, .portfolio-more span a:hover{
+    color: #303030;
+}
+
+.welcome-text span a:active, .portfolio-more span a:active{
+    color: #303030;
+}
+
+.welcome-photo img{
+    width: 24vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* SEGUNDA SEÇÃO */
+.body-presentation{
+    display: flex;
+    height: 100vh;
+    width: 96%;
+    align-items: center;
+    background-color: #D8FB50;
+}
+
+.presentation-about{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 4vw;
+}
+
+.presentation-about h2{
+    color: #303030;
+    font-size: 8vh;
+}
+
+
+.presentation-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.presentation-photo img{
+    width: 28vw;
+    height: auto;
+    border: 4px solid white;
+}
+
+
+
+/* TERCEIRA SEÇÃO */
+
+.body-skills, .body-portfolio, .body-experience{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 96%;
+    margin-top: 40px;
+}
+
+.skills-logo, .main-projects-logo, .experience-logo{
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+
+.skills-menu, .main-projects-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+}
+
+/* TERCEIRA SEÇÃO: EXPERIENCIA */
+
+.body-experience{
+    height: auto;
+   
+}
+.card-experience-light, .card-experience-gray{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-experience-gray{
+    background-color: #ECECEC;
+}
+
+.card-photo {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-photo img, .card-photo-gray img{
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 4px rgb(191, 191, 191);
+}
+
+.card-photo-gray{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.card-photo-gray img{
+    width: 350px;
+}
+
+.card-experience-info{
+    padding-top: 20px;
+    width: 600px;
+    
+}
+
+/* QUARTA SEÇÃO: HARD/SOFT SKILLS */
+.card-skills{
+    background-color: #ECECEC;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-skills-images{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon-hard-soft-skill{
+    height: 120px;
+}
+
+.card-soft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.card-soft img{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.icon-breve{
+    height: 240px;
+    width: auto;
+}
+.portfolio-main-projects{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-project{
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    box-shadow: 1px 1px 8px rgb(191, 191, 191);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-project-img img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-project-intro{
+    text-align: center;
+    /* margin-top: 10px; */
+    padding: 6px;
+}
+
+.card-links{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 30px;
+    margin-bottom: 16px;
+}
+
+.card-links img{
+    height: 36px;
+    width: auto;
+}
+
+.card-links a{
+    color: #262626;
+    padding-left: 8px;
+}
+
+.card-links a:hover{
+    color: #B5E61D
+}
+
+.portfolio-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-more span{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+}
+
+
+/* RODAPÉ  */
+footer{
+    height: 60vh;
+}
+
+.footer-menu{
+    /* color: white; */
+    background-color: #262626;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text{
+    color: white;
+}
+
+.footer-text h3{
+    color: white;
+}
+
+.footer-menu img{
+    height: 30vh;
+    width: auto;
+    margin-left: 5vw;
+    margin-right: 3vw;
+}
+
+.footer-contacts{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black   /* alterar para preto */
+}
+
+.footer-contacts span{
+    margin-right: 20vw;
+    color: white;
+    font-weight: bolder;
+}
+
+.icon-social-media{
+    margin-right: 2vw;
+    height: 36px;
+    width: auto;
+}
+
+
