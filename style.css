@@ -35,6 +35,7 @@ h3{
     font-family: 'Poppins', sans-serif;
 }
 
+/* CABEÇALHO */
 .main-menu{
     margin-top: 5px;
     display: flex;
@@ -58,6 +59,7 @@ h3{
     padding-left: 10vw  ;
 }
 
+/* CONTAINER:GERAL */
 .container{
     display: flex;
     flex-direction: column;
@@ -71,6 +73,7 @@ h3{
     align-items: center;
     width: 100%;
     height: 100vh;
+    flex-wrap:wrap-reverse;
 }
 
 .welcome-text{
@@ -78,7 +81,7 @@ h3{
 }
 
 .welcome-text p{
-    font-size: 4vh;
+    font-size: 30px;
 }
 
 .welcome-text span, .portfolio-more span{
@@ -112,7 +115,7 @@ h3{
 }
 
 .welcome-photo img{
-    width: 24vw;
+    width: 290px;
     height: auto;
     border-radius: 50%;
 }
@@ -124,6 +127,7 @@ h3{
     width: 96%;
     align-items: center;
     background-color: #D8FB50;
+    flex-wrap: wrap;
 }
 
 .presentation-about{
@@ -147,7 +151,7 @@ h3{
 }
 
 .presentation-photo img{
-    width: 28vw;
+    width: 320px;
     height: auto;
     border: 4px solid white;
 }
@@ -155,7 +159,6 @@ h3{
 
 
 /* TERCEIRA SEÇÃO */
-
 .body-skills, .body-portfolio, .body-experience{
     display: flex;
     flex-direction: column;
@@ -175,19 +178,20 @@ h3{
     align-items: center;
     gap: 20px;
     height: 80vh;
+    flex-wrap: wrap;
 }
 
 /* TERCEIRA SEÇÃO: EXPERIENCIA */
-
 .body-experience{
-    height: auto;
-   
+    height: auto; 
 }
+
 .card-experience-light, .card-experience-gray{
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .card-experience-gray{
@@ -219,8 +223,7 @@ h3{
 
 .card-experience-info{
     padding-top: 20px;
-    width: 600px;
-    
+    width: 600px;   
 }
 
 /* QUARTA SEÇÃO: HARD/SOFT SKILLS */
@@ -263,6 +266,8 @@ h3{
     height: 240px;
     width: auto;
 }
+
+/* QUINTA SEÇÃO: PORTFÓLIO */
 .portfolio-main-projects{
     display: flex;
     flex-direction: column;
@@ -289,7 +294,6 @@ h3{
 
 .card-project-intro{
     text-align: center;
-    /* margin-top: 10px; */
     padding: 6px;
 }
 
@@ -335,12 +339,12 @@ footer{
 }
 
 .footer-menu{
-    /* color: white; */
     background-color: #262626;
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-text{
@@ -363,7 +367,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black   /* alterar para preto */
+    background-color: black;
 }
 
 .footer-contacts span{
