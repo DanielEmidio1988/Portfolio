@@ -64,6 +64,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 /* PRIMEIRA SEÇÃO */
@@ -72,12 +73,12 @@ h3{
     justify-content:space-evenly;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    flex-wrap:wrap-reverse;
+    min-height: 100vh;
 }
 
 .welcome-text{
     width: 50%;
+    min-width: 450px;
 }
 
 .welcome-text p{
@@ -123,9 +124,10 @@ h3{
 /* SEGUNDA SEÇÃO */
 .body-presentation{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 96%;
     align-items: center;
+    justify-content: center;
     background-color: #D8FB50;
     flex-wrap: wrap;
 }
@@ -134,6 +136,7 @@ h3{
     display: flex;
     flex-direction: column;
     width: 60%;
+    min-width: 450px;
     padding-left: 4vw;
 }
 
@@ -162,7 +165,7 @@ h3{
 .body-skills, .body-portfolio, .body-experience{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 80vh;
     width: 96%;
     margin-top: 40px;
 }
@@ -176,8 +179,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 80vh;
+    gap: 2vw;
     flex-wrap: wrap;
 }
 
@@ -229,8 +231,12 @@ h3{
 /* QUARTA SEÇÃO: HARD/SOFT SKILLS */
 .card-skills{
     background-color: #ECECEC;
-    width: 350px;
-    height: 500px;
+    /* width: 350px;
+    height: 500px; */
+    height: 60vh;
+    width: 25vw;
+    min-width: 300px;
+    flex-wrap: wrap;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -246,7 +252,9 @@ h3{
 }
 
 .icon-hard-soft-skill{
-    height: 120px;
+    height: 8vw;
+    min-height: 80px;
+    width: auto;
 }
 
 .card-soft{
@@ -254,17 +262,20 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 10px;
+    font-size: 1.5vh;
 }
 
 .card-soft img{
-    width: 100px;
+    height: 6vw;
+    min-height: 80px;
+    width: auto;
     border-radius: 20px;
 }
 
 .icon-breve{
-    height: 240px;
-    width: auto;
+    height: auto;
+    width: 16vw;
+    min-width: 200px;
 }
 
 /* QUINTA SEÇÃO: PORTFÓLIO */
@@ -276,8 +287,12 @@ h3{
 
 .card-project{
     background-color: white;
-    height: 400px;
-    width: 350px;
+    /* height: 400px;
+    width: 350px; */
+
+    height: 50vh;
+    width: 20vw;
+    min-width: 250px;
     box-shadow: 1px 1px 8px rgb(191, 191, 191);
     border-radius: 20px;
     display: flex;
@@ -287,7 +302,7 @@ h3{
 
 .card-project-img img{
     width: 100%;
-    height: 200px;
+    height: 24vh;
     display: flex;
     border-radius: 20px 20px 0px 0px;
 }
@@ -335,7 +350,7 @@ h3{
 
 /* RODAPÉ  */
 footer{
-    height: 60vh;
+    height: 70vh;
 }
 
 .footer-menu{
@@ -344,7 +359,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
 }
 
 .footer-text{
@@ -380,6 +395,72 @@ footer{
     margin-right: 2vw;
     height: 36px;
     width: auto;
+}
+
+@media screen and (min-device-width: 500px) and (max-device-width: 800px){
+
+    .body-welcome{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text{
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .body-presentation{
+        flex-direction: column;
+    }
+
+    .presentation-about{
+        min-width: 500px;
+    }
+
+    .presentation-photo{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 60vw;
+    }
+    
+    .presentation-photo img{
+        width: 80vw;
+        min-width: 320px;
+    }
+    
+}
+
+@media screen and (max-device-width: 500px){
+
+    .body-welcome{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text{
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .body-presentation{
+        flex-direction: column;
+    }
+
+    .presentation-about{
+        min-width: 360px;
+    }
+
+    .presentation-photo{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 60vw;
+    }
+    
+    .presentation-photo img{
+        width: 80vw;
+        min-width: 320px;
+    }
+    
 }
 
 
