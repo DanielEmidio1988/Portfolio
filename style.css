@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: #303030;
 }
 
 ul{
@@ -21,7 +20,7 @@ a:hover{
 }
 
 h1{
-    font-size: 15vh;
+    font-size: 14vh;
     font-weight: bold;
 }
 
@@ -34,6 +33,31 @@ h3{
     font-size: 3vh;
     font-family: 'Poppins', sans-serif;
 }
+
+/* DARKMODE CONTAINER */
+.container-off{
+    background-color: #262626;
+    color: white;
+}
+
+.container-off a{
+    color: white;
+}
+
+.container-off a:hover{
+    color: #B5E61D;
+    transition: .5s;    
+}
+
+
+.h1Off{
+    color:white;
+}
+
+.textoOff{
+    color: white;
+}
+
 
 /* CABEÇALHO */
 .main-menu{
@@ -48,19 +72,56 @@ h3{
 .main-logo img{
     height: 90px;
     width: auto;
-    padding-left: 10vh;  
+    padding-left: 5vh;  
+}
+
+.main-logo img:hover{
+    cursor: pointer;
 }
 
 .main-options{
     display: flex;
     align-items: center;
     width: 90%;
-    gap: 10vw;
     padding-left: 10vw  ;
 }
 
-/* CONTAINER:GERAL */
-.container{
+#main-options-menu{
+    list-style: none;
+    display: flex;
+    gap: 10vw;
+}
+
+#main-options-menu > li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu-link{
+    transition: all ease 0.2s;
+    text-decoration: none;
+}
+
+.menu-linkOff{
+    transition: all ease 0.2s;
+    text-decoration: none;
+    color:white
+}
+
+.main-options-hamburguer{
+    display: none;
+    height: 100%;
+}
+
+.hamburguer{
+    background-color: #B5E61D;
+    height: 5px;
+    border-radius: 20px;
+    width: 40px;
+}
+
+/* CONTAINER:GERAL MAIN*/
+.container-main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +133,7 @@ h3{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    width: 100%;
+    width: 96%;
     min-height: 100vh;
 }
 
@@ -138,13 +199,13 @@ h3{
     width: 60%;
     min-width: 450px;
     padding-left: 4vw;
+    color: #303030;
 }
 
 .presentation-about h2{
     color: #303030;
     font-size: 8vh;
 }
-
 
 .presentation-photo{
     display: flex;
@@ -158,8 +219,6 @@ h3{
     height: auto;
     border: 4px solid white;
 }
-
-
 
 /* TERCEIRA SEÇÃO */
 .body-skills, .body-portfolio, .body-experience{
@@ -198,6 +257,7 @@ h3{
 
 .card-experience-gray{
     background-color: #ECECEC;
+    color: #303030;
 }
 
 .card-photo {
@@ -231,15 +291,13 @@ h3{
 /* QUARTA SEÇÃO: HARD/SOFT SKILLS */
 .card-skills{
     background-color: #ECECEC;
-    /* width: 350px;
-    height: 500px; */
     height: 60vh;
     width: 25vw;
     min-width: 300px;
-    flex-wrap: wrap;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
+    color: #303030;
 }
 
 .card-skills-images{
@@ -287,9 +345,7 @@ h3{
 
 .card-project{
     background-color: white;
-    /* height: 400px;
-    width: 350px; */
-
+    color: #303030;
     height: 50vh;
     width: 20vw;
     min-width: 250px;
@@ -377,6 +433,7 @@ footer{
     margin-right: 3vw;
 }
 
+
 .footer-contacts{
     height: 20%;
     display: flex;
@@ -395,6 +452,11 @@ footer{
     margin-right: 2vw;
     height: 36px;
     width: auto;
+    transition: transform .3s;
+}
+
+.icon-social-media:hover{
+    transform: scale(1.3);
 }
 
 @media screen and (min-device-width: 500px) and (max-device-width: 800px){
@@ -432,14 +494,85 @@ footer{
 
 @media screen and (max-device-width: 500px){
 
+    .main-menu{
+        justify-content: space-evenly
+    }
+
+    h1{
+        font-size: 10vh;
+ 
+    }
+
+    #main-options-menu{
+        position:absolute;
+        top: 90px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+        background: #7d7f74;
+        border-bottom: #B5E61D solid 2px;
+        transition: .1s;
+    }
+
+    #main-options-menu.visible{
+        left: 0;
+        gap: 0;
+    }
+
+    #main-options-menu > li{
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .menu-link{
+        font-size: 16px;
+    }
+
+    .main-logo{
+        margin-right: 26vw;
+    }
+
+    .main-options-hamburguer{
+        display: block;
+        height: 20px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .body-welcome{
         flex-direction: column-reverse;
         margin-bottom: 20px;
+        width: 96%;  
     }
 
     .welcome-text{
+        display: flex;
         justify-content: center;
         margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .welcome-text p{
+        font-size: 20px;
+    }
+
+    .welcome-text span{
+        height: 70px;
+        width: 200px;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+     
+     
+      
+        
     }
 
     .body-presentation{
