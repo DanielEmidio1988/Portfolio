@@ -10,31 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="container-on" id="container">
     <header>
         <!-- Fundo Escuro -->
         <div class="main-menu">
             <section class="main-logo">
 
-                <img src="./assets/logo-top-light.png" alt="logo-daniel-emidio" class="main-logo-dark">
+                <img src="./assets/logo-top-light.png" alt="logo-daniel-emidio" class="on" id="iconLamp" onclick="ligaDesliga(event)">
             </section>
             <section class="main-options">
-                <span><a href="#id-about">Sobre</a></span>
-                <span><a href="#id-experience">Experiência</a></span>
-                <span><a href="#id-skills">Habilidades</a></span>
-                <span><a href="#id-portfolio">Portfólio</a></span>
-                <span><a href="#id-contact">Contato</a></span>
+                <ul id="main-options-menu">
+                    <li><a class="menu-link" href="#id-about">Sobre</a></li>
+                    <li><a class="menu-link" href="#id-experience">Experiência</a></li>
+                    <li><a class="menu-link" href="#id-skills">Habilidades</a></li>
+                    <li><a class="menu-link" href="#id-portfolio">Portfólio</a></li>
+                    <li><a class="menu-link" href="#id-contact">Contato</a></li>
+                </ul>
+                <div class="main-options-hamburguer" onclick="toggleMenu()">
+                    <span class="hamburguer"></span>
+                    <span class="hamburguer"></span>
+                    <span class="hamburguer"></span>
+                    
+
+                </div>
             </section>
+
         </div>
     </header>
 
-    <div class="container">
+    <div class="container-main">
         <!-- SEÇÃO DE BOAS VINDAS -->
         <section class="body-welcome">
             <!-- TRANSFORMAR ESSA SEÇÃO EM UMA IMAGEM -->
             <div class="welcome-text">
-            <p>Olá! Meu nome é</p><p><H1>Daniel Emidio</H3></p> <p>Administrador por formação pela FMU, que decidiu seguir a jornada para me tornar um desenvolvedor Web Full Stack.</p>
+            <p class="textoOn" id="texto">Olá! Meu nome é</p><p><H1 class="h1On" id="h1">Daniel Emidio</H3></p> <p class="textoOn" id="texto">Administrador por formação pela FMU, que decidiu seguir a jornada para me tornar um desenvolvedor Web Full Stack.</p>
             <span><a href="#id-about">Muito prazer!</a></span>
             </div>
             <div class="welcome-photo">
@@ -79,8 +91,8 @@
                         <div class="card-experience-info">
                            <h3>Um pouco sobre minha vida profissional</h3>
                            <br>
-                           <p>Com 16 anos de carreira, trabalhei em diferentes setores como gastronomia, logística, recursos humanos e vendas. Trabalhei em empresas de todos os portes, 
-                            abri meu próprio negócio. Toda essa bagagem me trouxeram uma experiência riquissima que me ajudaram a lidar com grandes desafios na minha carreira e isso sempre se refletiu nos meus resultados.</p>
+                           <p>Com 16 anos de carreira, trabalhei em diferentes setores e tamanhos,  
+                            abri meu próprio negócio. Toda essa bagagem me trouxe uma experiência riquissima que me ajudou a superar grandes desafios e isso sempre se refletiu nos meus resultados.</p>
                             <p>Gosto de me sentir desafiado e fora da minha zona de conforto, pois acredito que esta seja a formula do crescimento profissional.</p>
                         </div>
                     </div>
@@ -91,8 +103,8 @@
                            <h3>Como foi minha vida academica?</h3>
                            <br>
                            <p>Sempre fui uma pessoa muito ativa nos estudos. Estudei Analise e Desenvolvimento de Sistemas pela UMC e Administração de Empresas pela FMU e me envolvendo em atividades extra-curriculadores como: Empresa Junior, 
-                            Iniciação Cientifica, Maratona de Conhecimento, Desafios Universitários, entre outros.   </p>
-                            <p>Atualmente estou participando do Bootcamp da Labenu para me tornar um Desenvolvedor Fullstack.</p>
+                            Iniciação Cientifica, Desafios Universitários, entre outros.   </p>
+                            <p>Atualmente estou participando do Bootcamp pela Labenu.</p>
                         </div>
                         <div class="card-photo-gray">
                             <img src="./assets/foto-academica.jpg" alt="foto-academica">
@@ -203,7 +215,7 @@
                         </div>
                         <div class="card-links">
                             <img src="./assets/github.png" alt="github">
-                            <a href="#" target="_blank">Veja mais</a>
+                            <a href="https://github.com/DanielEmidio1988/projeto-intro-web" target="_blank">Veja mais</a>
                         </div>
                     </div>
 
@@ -219,7 +231,7 @@
                         </div>
                         <div class="card-links">
                             <img src="./assets/github.png" alt="github">
-                            <a href="#" target="_blank">Veja mais</a>
+                            <a href="https://github.com/DanielEmidio1988/F4Life" target="_blank">Veja mais</a>
                         </div>
                     </div>
 
@@ -235,7 +247,7 @@
                         </div>
                         <div class="card-links">
                             <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988?tab=repositories" target="_blank">Veja mais</a>
+                            <a href="https://github.com/DanielEmidio1988/NLW-eSports" target="_blank">Veja mais</a>
                         </div>
                     </div>
 
@@ -269,6 +281,6 @@
         </div>
 
     </footer>
-    
+</div>
 </body>
 </html>
