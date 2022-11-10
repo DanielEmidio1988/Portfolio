@@ -9,7 +9,7 @@ Muito prazer! Este é meu portfólio pessoal, onde você pode acompanhar meus pr
 [Clique aqui para acessar](https://danielemidio1988.github.io/Portfolio)
 
 ## Tecnologias
-
+- Javascript
 - HTML
 - CSS
 - Git e Github
