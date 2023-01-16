@@ -4,11 +4,6 @@ function toggleMenu() {
     menu.classList.toggle("visible");
 }
 
-
-    // const logoDark = "./assets/logo-top-dark.png"
-    // const logoLight = "./assets/logo-top-light.png"
-
-
     function ligaDesliga(){
     let imagem = document.getElementById('iconLamp')
     let container = document.getElementById('container')
@@ -31,23 +26,3 @@ function toggleMenu() {
         texto.className='textoOn'
     }
 }
-
-  
- 
-
-
-// })
-
-// document.getElementById('iconLamp').addEventListener('click', ()=>{
-//     const imagem = document.getElementById('iconLamp').src;
-//     const logoDark = "./assets/logo-top-dark.png"
-//     const logoLight = "./assets/logo-top-light.png"
-
-//     if(imagem === logoLight){
-//         document.getElementById('iconLamp').src = logoDark
-//     }else{
-//         document.getElementById('iconLamp').src = logoLight
-//     }
-
-// });
-
