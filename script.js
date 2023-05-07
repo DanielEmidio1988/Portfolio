@@ -1,4 +1,3 @@
-//Função Menu Hamburguer
 function toggleMenu() {
     let menu = document.getElementById("main-options-menu");
     menu.classList.toggle("visible");
@@ -9,8 +8,8 @@ function toggleMenu() {
     let container = document.getElementById('container')
     let h1 = document.getElementById('h1')
     let texto= document.getElementById('texto')
-    const logoDark = "./assets/logo-top-dark.png"
-    const logoLight = "./assets/logo-top-light.png"
+    const logoDark = "./assets/logo-top-dark.svg"
+    const logoLight = "./assets/logo-top-light.svg"
     if(imagem.className === "on"){
         document.getElementById('iconLamp').src = logoDark
         imagem.className='off'
@@ -26,3 +25,10 @@ function toggleMenu() {
         texto.className='textoOn'
     }
 }
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }

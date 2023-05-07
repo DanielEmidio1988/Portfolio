@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olá, meu nome é Daniel!</title>
+    <link rel="shortcurt icon" href="./assets/Icon-readme.png"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
     <div class="container-on" id="container">
     <header>
         <!-- Fundo Escuro -->
         <div class="main-menu">
             <section class="main-logo">
 
-                <img src="./assets/logo-top-light.png" alt="logo-daniel-emidio" class="on" id="iconLamp" onclick="ligaDesliga(event)">
+                <img src="./assets/logo-top-light.svg" alt="logo-daniel-emidio" class="on" id="iconLamp" onclick="ligaDesliga(event)">
             </section>
             <section class="main-options">
                 <ul id="main-options-menu">
@@ -43,31 +46,30 @@
         <!-- SEÇÃO DE BOAS VINDAS -->
         <section class="body-welcome" id="id-welcome">
             <div class="welcome-text">
-            <p class="textoOn" id="texto">Olá! Meu nome é</p><p><H1 class="h1On" id="h1">Daniel Emidio</H3></p> <p class="textoOn" id="texto">Administrador por formação pela FMU, que decidiu seguir a jornada para me tornar um desenvolvedor Web Full Stack.</p>
-            <span><a href="#id-about">Muito prazer!</a></span>
+            <p class="textoOn" id="texto">Olá! Meu nome é</p><p><H1 class="h1On" id="h1">Daniel Emidio,</H3></p> <p class="textoOn" id="texto">sou desenvolvedor web fullstack, gosto de encarar desafios e agregar valor aos projetos em que trabalho. Explore aqui meus trabalhos mais recentes. </p>
+            <button onclick="scrollToSection('id-about')" class="button-to-presentation">Muito prazer! ツ</button>
             </div>
             <div class="welcome-photo">
                 <img src="./assets/foto-intro.png" alt="Foto Introdução">
             </div>
         </section>
 
-        <!-- SEÇÃO DE APRESENTAÇÃO PROFISSIONAL -->
+        <!-- S  EÇÃO DE APRESENTAÇÃO PROFISSIONAL -->
         <section class="body-presentation" id="id-about">
-            <div class="presentation-about" >
+            <div class="presentation-about" data-anime="left">
                 <h2>Quem sou eu?</h2> </br>
-                <h3>Um pouco sobre mim</h3>
-                
+                <h3>Um pouco sobre mim</h3>         
                 <p>
-                    <br/><br/>
-                    Iniciei meus estudos em ago/2022 pela Labenu, participando do Bootcamp para me tornar um Desenvolvedor Web Fullstack. Porém, o que nunca imaginei seria o tamanho da paixão que nasceu em mim pela área de programação e cada minuto de estudo e conhecimento adquirido tem sido incrível!
-                    <br/><br/>
-                    Sou uma pessoa determinada, comunicativa e engajado. Fã de animes, mangas, filmes, séries, games, crossfit e gastronomia. Durante minha carreira, tive a oportunidade de passar por diferentes setores como logística, vendas e recursos humanos e aprendi bastante em cada uma delas.
-                    <br/><br/>
-                    Atualmente estou me preparando para me tornar um Desenvolvedor Web Full Stack e aberto a novas oportunidade.
+                    Iniciei minha transição de carreira em Ago/2022, quando participei do Bootcamp Web Full Stack pela Labenu. Porém, nunca imaginei o tamanho da paixão que nasceu em mim pela área de programação. Cada minuto de estudo e conhecimento adquirido tem sido incrível! Desde então, tenho me dedicado a buscar constantemente novas fontes de aprendizado, aprimorando minhas habilidades e aplicando-as em meus projetos.
                 </p>
-
+                <p>
+                    Sou uma pessoa determinada, comunicativa e engajada. Além da programação, tenho diversos interesses, como animes, mangás, filmes, séries, games, crossfit e gastronomia. Ao longo da minha carreira, adquiri experiência em diferentes áreas de negócio, incluindo gastronomia, logística, recursos humanos e vendas, além de ter experiência no empreendedorismo.
+                </p>
+                <p>
+                    Como desenvolvedor, acredito que entender as necessidades dos usuários é fundamental para o sucesso de qualquer aplicação. Por essa razão, procuro desenvolver projetos que atendam às reais necessidades dos clientes, tornando-os intuitivos e agradáveis de usar, seja em aplicações web, mobile ou em qualquer outro produto digital.
+                </p>          
             </div>
-            <div class="presentation-photo">
+            <div class="presentation-photo" data-anime="right">
                 <img src="./assets/foto-perfil-daniel.png" alt="foto-daniel-emidio">
             </div>
         </section>
@@ -75,232 +77,202 @@
         <!-- SEÇÃO DE EXPERIÊNCIA PREVIA -->
         <section class="body-experience" id="id-experience">
 
-                <div class="experience-logo">
+                <div class="experience-logo" data-anime="left">
                     <h2>Minhas Experiências</h2>
                     <h3>Um breve resumo sobre minha jornada ao longo da minha carreira</h3>
                 </div>
                 <div class="experience-menu">
 
-                    <div class="card-experience-light">
-                        <div class="card-photo">
-                            <img class="photo-professional" src="./assets/foto-profissional.jpg" alt="foto-profissional">
-                        </div>
-                        <div class="card-experience-info">
-                           <h3>Um pouco sobre minha vida profissional</h3>
-                           <br>
-                           <p>Com 16 anos de carreira, trabalhei em diferentes setores e tamanhos,  
-                            abri meu próprio negócio. Toda essa bagagem me trouxe uma experiência riquissima que me ajudou a superar grandes desafios e isso sempre se refletiu nos meus resultados.</p>
-                            <p>Gosto de me sentir desafiado e fora da minha zona de conforto, pois acredito que esta seja a formula do crescimento profissional.</p>
+                    <div class="box-skills">
+                        <h3 data-anime="bottom">Minhas Skills</h3>
+                        <p data-anime="bottom">Minhas principais habilidades técnicas</p>
+                        <div class="skills-info" data-anime="bottom">
+                            
+                            <div class="skill" data-anime="bottom">
+                                <p>HTML</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-HTML">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>CSS</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-CSS">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>JavaScript</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-JavaScript">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>TypeScript</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-TypeScript">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>ReactJs</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-ReactJs">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>NextJs</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-NextJs">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>MongoDB</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-MongoDB">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>SQLite</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-SQLite">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>Jest</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-Jest">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-anime="bottom">
+                                <p>Java</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-Java">
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="skill" data-anime="bottom">                                  
+                                <p>Kotlin</p>
+                                <div class="bar-progress">
+                                    <div class="bar-progress-Kotlin">
+                                    </div>
+                                </div>
+                            </div>
+                      
                         </div>
                     </div>
 
-                    <div class="card-experience-gray">
+                    <div class="box-experience" loading="lazy">
+                        <h3 data-anime="left">Minhas experiências</h3>
+                        <p class="subtitle-experience" data-anime="left">Minha jornada profissional como desenvolvedor</p>
 
-                        <div class="card-experience-info">
-                           <h3>Como foi minha vida academica?</h3>
+                        <div class="experience-info" data-anime="bottom">
+                           <h3>Desenvolvedor FullStack Jr <span>@Real Soluções</span></h3>
+                           <p><span>02/2023 a atual | São Paulo, SP</span></p>
                            <br>
-                           <p>Sempre fui uma pessoa muito ativa nos estudos. Estudei Analise e Desenvolvimento de Sistemas pela UMC e Administração de Empresas pela FMU e me envolvendo em atividades extra-curriculadores como: Empresa Junior, 
-                            Iniciação Cientifica, Desafios Universitários, entre outros.   </p>
-                            <p>Atualmente estou participando do Bootcamp pela Labenu.</p>
+                           <p>Trabalho com o desenvolvimento e manutenção de aplicações web e automação de processos de planilhas em nuvem utilizando tecnologias como Javascript, NextJs, Google AppScript e AppSheet.</p>
                         </div>
-                        <div class="card-photo-gray">
-                            <img src="./assets/foto-academica.jpg" alt="foto-academica">
-                        </div>
+
+                        <div class="experience-info" data-anime="bottom">
+                            <h3>Desenvolvedor Front End <span>@Freelancer</span></h3>
+                            <p><span>11/2022 a 04/2024 | São Paulo, SP</span></p>
+                            <br>
+                            <p>Trabalhei com a oferta de serviços como desenvolvimento de aplicações e páginas web, correção, suporte, entre outros, com foco em Front-End, conforme demanda do cliente utilizando tecnologias Javascript, CSS, HTML, ReactJs.</p>
+                         </div>
                     </div>
-
-                    <div class="card-experience-light">
-                        <div class="card-photo">
-                            <img class="photo-conquest" src="./assets/foto-conquista.jpg" alt="foto-profissional">
-                        </div>
-                        <div class="card-experience-info">
-                           <h3>E claro, minhas conquistas!</h3>
-                           <br>
-                           <p>Em 2021 reconhecido como Empreendedor Case de Sucesso pela RHF Talentos por todos os resultados alcançados. </p>
-                           <br>
-                           <p>4º Colocado Nacional pela Iniciação Cientifica "Gastronomia Empreendedora" pelo Congresso Nacional de Iniciação Cientifica (CONIC SEMESP). </p>
-                        </div>
-                    </div>     
-                    
+                   
                 </div>
-        </section>
-
-        <!-- SEÇÃO DE APRESENTAÇÃO DE HABILIDADES -->
-        <section class="body-skills" id="id-skills">
-                <div class="skills-logo">
-                    <h2>Minhas Habilidades</h2>
-                    <h3>Principais competências tecnicas e comportamentais que possuo experiência.</h3>
-                </div>
-                <div class="skills-menu">
-
-                    <div class="card-skills">
-                        <div>
-                            <h3>Front-End</h3>
-                            <p>Para que você tenha uma experiência agradável na sua página.</p>
-                        </div>
-                        <div class="card-skills-images">
-                            <img class="icon-hard-soft-skill" src="./assets/5eff310849334a28d466c420_html.png" alt="Icone-HTML">
-                            <img class="icon-hard-soft-skill" src="./assets/5eff31146646fcb7cc05faf0_css.png" alt="Icone-CSS">
-                            <img class="icon-hard-soft-skill" src="./assets/5eff31222cbe9015158dc9cd_javascript.png" alt="Icone-Javascript">
-                            <img class="icon-hard-soft-skill" src="./assets/5eff312c7bc6f809a5453c2c_react.png" alt="Icone-React">
-                        </div>
-                    </div>
-
-                    <div class="card-skills">
-                        <div>
-                            <h3>Back-End</h3>
-                            <p>Por trás dos bastidores, utilizo as seguintes linguagens.</p>
-                        </div>
-                        <div class="card-skills-images">
-                            <img class="icon-hard-soft-skill" src="./assets/nodejs-icon.png" alt="Icone-NodeJS">
-                            <img class="icon-hard-soft-skill" src="./assets/ts-icon.png" alt="Icone-Typescript">
-                            <img class="icon-hard-soft-skill" src="./assets/mongodb-icon.png" alt="Icone-MongoDB">
-                            <img class="icon-hard-soft-skill" src="./assets/sqlite.png" alt="Icone-SQLite">
-                        </div>
-                    </div>
-
-                </div>  
         </section>
 
         <!-- SEÇÃO PARA APRESENTAÇÃO DO PORTFÓLIO -->
         <section class="body-portfolio" id="id-portfolio">
             <div class="portfolio-main-projects">
-                <div class="main-projects-logo">
+                <div class="main-projects-logo" data-anime="bottom">
                     <h2>Principais Projetos</h2>
                     <h3>Alguns dos meus projetos pessoais</h3>
                 </div>
                 <div class="main-projects-options">
-                    
-                     <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/dFood.png" alt="Projeto dFood">
-                        </div>
-                        <div class="card-project-intro">
-                            <b>dFood</b>
-                            <p>NodeJs/ TypeScript/ Express / MongoDB</p>
-                        </br>
-                            <p>Esta é uma aplicação BackEnd para um sistema de delivery, onde o usuário poderá cadastrar sua conta e realizar pedidos.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/dFood" target="_blank">Veja mais</a>
-                        </div>
-                    </div>  
-                    
-                     <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/layoutLabeddit.png" alt="Projeto Labeddits">
-                        </div>
-                        <div class="card-project-intro">
-                            <b>Labeddit</b>
-                            <p>ReactJS/ TypeScript/ SQLite / Jest</p>
-                        </br>
-                            <p>Este é um projeto Web Full Stack desenvolvido no Bootcamp Labenu, onde o usuário tem acesso a rede social Labeddit.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/Labeddit-FrontEnd" target="_blank">Veja mais</a>
-                        </div>
-                    </div>  
-                    
-                     <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/yugiohcardshop.png" alt="Projeto YGO-Card-Shop">
-                        </div>
-                        <div class="card-project-intro">
-                            <b>Yu-gi-oh Card Shop</b>
-                            <p>ReactJS / Styled-Components / JavaScript / HTML / CSS</p>
-                        </br>
-                            <p>Aplicação web de um e-commerce com vendas de Cards de Yugioh.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/Portfolio" target="_blank">Veja mais</a>
-                        </div>
-                    </div>    
-                    
-                     <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/random-user.png" alt="Projeto RandomAPI">
-                        </div>
-                        <div class="card-project-intro">
-                            <b>RandomAPI</b>
-                            <p>ReactJS /API / Express /Mongo DBExpress</p>
-                        </br>
-                            <p>Aplicação Web para o consumo de API distintas e um CRUD.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/random-api" target="_blank">Veja mais</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/pokedexlayout.png" alt="Projeto Pokedex">
-                        </div>
-                        <div class="card-project-intro">
-                            <b>Pokedex</b>
-                            <p>ReactJS/ API REST</p>
-                        </br>
-                            <p>A Pokedex é uma aplicação web que contém as principais informações dos 1008 pokemons existentes.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/pokedex" target="_blank">Veja mais</a>
-                        </div>
-                    </div>                                           
-                  
-                    <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/bancodigitallayout.png" alt="Projeto Banco Digital">
-                        </div>
-                        <div class="card-project-intro">
-                            <b>Banco Digital</b>
-                            <p>ReactJS/ Tailwind/  NodeJs/ Express/ MongoDB</p>
-                        </br>
-                            <p>Este projeto foi desenvolvido com o propósito de simular a administração de uma conta bancária entre usuários.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/banco-digital" target="_blank">Veja mais</a>
-                        </div>
-                    </div>  
 
-                    <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/layoutDFtiness.png" alt="Projeto Dfitness">
+                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/Dfitness', '_blank')" data-anime="bottom">
+                        <div class="card_project_img">
+                            <img src="./assets/layoutDFitness.png" alt="projeto "/>
                         </div>
-                        <div class="card-project-intro">
-                            <b>DFitness</b>
-                            <p>HTML / CSS / Javascript</p>
-                        </br>
-                            <p>Landing page responsiva construida para a academia de Cross Training DFitness.</p>
-                        </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/Dfitness" target="_blank">Veja mais</a>
+                        <div class="card_project_about">
+                            <h3>Landing DFitness</h3>
+                            <p>FrontEnd</p>
                         </div>
                     </div>
-                
-                    <div class="card-project">
-                        <div class="card-project-img">
-                            <img src="./assets/whatslab.png" alt="Projeto Whatslab">
+
+                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/dFood', '_blank')" data-anime="bottom">
+                        <div class="card_project_img">
+                            <img src="./assets/layoutDFood.png" alt="projeto "/>
                         </div>
-                        <div class="card-project-intro">
-                            <b>WHATSLAB</b>
-                            <p>React/ JavaScript / HTML / CSS</p>
-                        </br>
-                            <p>Projeto prático de estudo da página do Whatsapp.</p>
+                        <div class="card_project_about">
+                            <h3>dFood</h3>
+                            <p>BackEnd</p>
                         </div>
-                        <div class="card-links">
-                            <img src="./assets/github.png" alt="github">
-                            <a href="https://github.com/DanielEmidio1988/whatslab" target="_blank">Veja mais</a>
+                    </div>
+
+                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/Labeddit-FrontEnd', '_blank')" data-anime="bottom">
+                        <div class="card_project_img">
+                            <img src="./assets/layoutLabeddit.png" alt="projeto "/>
                         </div>
-                    </div>                                            
+                        <div class="card_project_about">
+                            <h3>Labeddit</h3>
+                            <p>FullStack</p>
+                        </div>
+                    </div>
+
+                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/yu-gi-oh-shop-card', '_blank')" data-anime="bottom">
+                        <div class="card_project_img">
+                            <img src="./assets/layoutYGOShop.png" alt="projeto "/>
+                        </div>
+                        <div class="card_project_about">
+                            <h3>Yu-gi-oh Card Shop</h3>
+                            <p>FullStack</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/pokedex', '_blank')" data-anime="bottom">
+                        <div class="card_project_img">
+                            <img src="./assets/layoutPokedex.png" alt="projeto "/>
+                        </div>
+                        <div class="card_project_about">
+                            <h3>Pokedex</h3>
+                            <p>FrontEnd</p>
+                        </div>
+                    </div>
+
+                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/banco-digital', '_blank')" data-anime="bottom">
+                        <div class="card_project_img">
+                            <img src="./assets/layoutBancoDigital.png" alt="projeto "/>
+                        </div>
+                        <div class="card_project_about">
+                            <h3>Banco Digital</h3>
+                            <p>FullStack</p>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="portfolio-more">
-                    <span><a href="https://github.com/DanielEmidio1988" target="_blank">Veja mais</a></span>
+                <div class="portfolio-more" data-anime="bottom">
+                    <a href="https://github.com/DanielEmidio1988" target="_blank">Veja mais projetos</a>
                 </div>
             </div>
         </section>
@@ -310,22 +282,26 @@
     <footer>
        
         <div class="footer-menu" id="id-contact">
-            <img src="./assets/logo-footer.png" alt="foto-logo-meus-contatos">
+            <img class="footer-img" src="./assets/logo-footer.png" alt="foto-logo-meus-contatos">
             <ul>
                 <li class="footer-text"><h2>Vamos conversar?</h3></li>
                 <li class="footer-text"><h3>Se deseja marcar um bate-papo, é só entrar em contato.</h3></li> 
                 <li class="footer-text"><br></li>   
                 <li class="footer-text">emidio.daniel@hotmail.com</li>
-                <li class="footer-text">(11) 98231-4853</li>     
+                <li class="footer-text">(11) 98198-2024</li>
+                <li class="footer-text"><br></li>  
+                <li class="footer-text">
+                    <div class="social-network">
+                        <a href="https://github.com/DanielEmidio1988" target="_blank"><img class="icon-social-media" src="./assets/github-footer.png" alt="icon-github"></a>
+                        <a href="https://www.linkedin.com/in/danielemidio1988/" target="_blank"><img class="icon-social-media" src="./assets/linkedin-footer.png" alt="icon-linkedin"></a>
+                    </div>
+                </li>  
+                <li class="footer-text"><br></li>       
             </ul>  
         </div>
 
         <div class="footer-contacts">
-            <span><a href="#id-welcome">Desenvolvido por Daniel Emidio.</a></span>
-            <div>
-            <a href="https://github.com/DanielEmidio1988" target="_blank"><img class="icon-social-media" src="./assets/github-footer.png" alt="icon-github"></a>
-            <a href="https://www.linkedin.com/in/danielemidio1988/" target="_blank"><img class="icon-social-media" src="./assets/linkedin-footer.png" alt="icon-linkedin"></a>
-            </div>
+            <span><a href="#id-welcome">Desenvolvido com ♥ por Daniel Emidio.</a></span>
         </div>
 
     </footer>

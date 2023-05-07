@@ -35,7 +35,7 @@ h2{
 
 h3{
     font-size: 3vh;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 /* DARKMODE CONTAINER */
@@ -61,9 +61,11 @@ h3{
 header{
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: #fff;
     width: 100%;
     border-bottom: #B5E61D 1px solid;
+    animation: top_to_bottom .7s .2s backwards;
+    z-index: 1;
 }
 
 .main-menu{
@@ -71,14 +73,21 @@ header{
     display: flex;
 }
 
-.main-logo{
-    width: 10%;
+.main-logo img{
+    height: 32px;
+    width: auto;
+    margin: 1vh 0 1vh 2vw;
+    padding: 6px; 
+    border-radius: 50%;
+    transition: .5s;
 }
 
-.main-logo img{
-    height: 90px;
-    width: auto;
-    padding-left: 5vh;  
+.on{
+    background-color: #262626; 
+}
+
+.off{
+    background-color: #B5E61D; 
 }
 
 .main-logo img:hover{
@@ -148,49 +157,36 @@ header{
 }
 
 .welcome-text p{
-    font-size: 30px;
+    font-size: 22px;
 }
 
-.welcome-text span, .portfolio-more span{
-    height: 70px;
-    width: 300px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-to-presentation{
+    height: 60px;
+    width: 220px;
+    font-size: 24px;
     border: 2px solid #B5E61D;
-    border-radius: 30px;
-    background-color: transparent;
+    border-radius: 12px;
+    background:#B5E61D;
     margin-top: 4vh;
 }
 
-.welcome-text span:hover, .portfolio-more span:hover{
-    background-color:#B5E61D;
-}
-
-.welcome-text span:active, .portfolio-more span:active{
-    border: #D8FB50;
-    background-color: #D8FB50;
-}
-
-.welcome-text span a:hover, .portfolio-more span a:hover{
-    color: #303030;
-}
-
-.welcome-text span a:active, .portfolio-more span a:active{
-    color: #303030;
+.button-to-presentation:hover{
+    background-color: transparent;
+    color: #B5E61D;
+    cursor: pointer;
 }
 
 .welcome-photo img{
     width: 290px;
     height: auto;
     border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
 }
 
 /* SEGUNDA SEÇÃO */
 .body-presentation{
+    padding: 8vh 0 8vh 0;
     display: flex;
-    min-height: 100vh;
     width: 96%;
     align-items: center;
     justify-content: center;
@@ -200,10 +196,11 @@ header{
 
 .presentation-about{
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    width: 60%;
-    min-width: 450px;
-    padding-left: 4vw;
+    width: 50%;
+    min-width: 350px;
+    padding: 10vh 0 0 4vw;
     color: #303030;
 }
 
@@ -212,21 +209,32 @@ header{
     font-size: 8vh;
 }
 
+.presentation-about h3{
+    margin-bottom: 4vh;
+}
+
+.presentation-about p{
+    margin-bottom: 4vh;
+}
+
 .presentation-photo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
 }
 
 .presentation-photo img{
-    width: 320px;
+    min-width: 320px;
+    width: 56%;
     height: auto;
-    border: 4px solid white;
+    border: 8px solid white;
+    box-shadow: 6px 6px 1px #B5E61D;
+    border-radius: 8px;
 }
 
 /* TERCEIRA SEÇÃO */
-.body-skills, .body-portfolio, .body-experience{
+.body-portfolio, .body-experience{
     display: flex;
     flex-direction: column;
     min-height: 80vh;
@@ -247,175 +255,196 @@ header{
     flex-wrap: wrap;
 }
 
-/* TERCEIRA SEÇÃO: EXPERIENCIA */
-.body-experience{
-    height: auto; 
-}
-
-.card-experience-light, .card-experience-gray{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card-experience-gray{
-    background-color: #ECECEC;
-    color: #303030;
-}
-
-.card-photo {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-}
-
-.card-photo img, .card-photo-gray img{
-    width: 250px;
-    height: auto;
-    border-radius: 20px;
-    border: 3px solid white;
-    box-shadow: 1px 1px 4px rgb(191, 191, 191);
-}
-
-.card-photo-gray{
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.card-photo-gray img{
-    width: 350px;
-}
-
-.card-experience-info{
-    padding-top: 20px;
-    width: 600px;   
-}
-
-/* QUARTA SEÇÃO: HARD/SOFT SKILLS */
-.card-skills{
-    background-color: #ECECEC;
-    height: 60vh;
-    width: 25vw;
-    min-width: 300px;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    color: #303030;
-}
-
-.card-skills-images{
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.icon-hard-soft-skill{
-    height: 8vw;
-    min-height: 80px;
-    width: auto;
-}
-
-.card-soft{
+/* TERCEIRA SEÇÃO: EXPERIENCIA > HABILIDADES*/
+.box-skills{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.5vh;
 }
 
-.card-soft img{
-    height: 6vw;
-    min-height: 80px;
-    width: auto;
-    border-radius: 20px;
+.box-skills h3{
+    font-weight: bold;
+    font-size: 24px;
 }
 
-.icon-breve{
-    height: auto;
-    width: 16vw;
-    min-width: 200px;
+.skills-info{
+    margin: 4vh 0 4vh 0;
+    width: 50%;
+    min-width: 350px;
 }
 
-/* QUINTA SEÇÃO: PORTFÓLIO */
+.skill p{
+    margin-bottom: 1vh;
+}
+
+.bar-progress{
+    height: 4px;
+    width: 100%;
+    background: #303030;
+    margin-bottom: 2vh;
+}
+
+.bar-progress-HTML{
+    width: 90%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-CSS{
+    width: 90%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-JavaScript{
+    width: 80%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-TypeScript{
+    width: 70%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-ReactJs{
+    width: 80%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-NextJs{
+    width: 60%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-MongoDB{
+    width: 60%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-SQLite{
+    width: 70%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-Jest{
+    width: 50%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-Java{
+    width: 40%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-Kotlin{
+    width: 40%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+/* TERCEIRA SEÇÃO: EXPERIENCIA > EXPERIENCIA PROFISSIONAL*/
+.body-experience{
+    height: auto; 
+}
+
+.box-experience{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtitle-experience{
+    margin-bottom: 4vh;
+}
+
+.experience-info{
+    width: 50%;
+    min-width: 350px;
+    margin-bottom: 8vh;
+}
+
+.experience-info h3{
+    font-weight: bold;
+}
+
+.experience-info h3 span{
+    color: #B5E61D;
+}
+
+.experience-info p span{
+    color: #7d7f74;
+}
+
+/* QUARTA SEÇÃO: PORTFÓLIO */
 .portfolio-main-projects{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.card-project{
-    background-color: white;
-    color: #303030;
-    height: 50vh;
-    width: 20vw;
-    min-width: 250px;
-    box-shadow: 1px 1px 8px rgb(191, 191, 191);
-    border-radius: 20px;
+.card_project{
+    width: 380px;
+    height: 260px;
+    box-shadow: 4px 4px 1px #B5E61D;
+    border-radius: 8px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-}
-
-.card-project-img img{
-    width: 100%;
-    height: 24vh;
-    display: flex;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.card-project-intro{
-    text-align: center;
-    padding: 6px;
-}
-
-.card-links{
-    display: flex;
     align-items: center;
-    justify-content: end;
-    padding-right: 30px;
-    margin-bottom: 16px;
+    justify-content: center;   
+    border: 1px solid #ccc; 
 }
 
-.card-links img{
-    height: 36px;
-    width: auto;
+.card_project:hover{
+    cursor: pointer;
 }
 
-.card-links a{
-    color: #262626;
-    padding-left: 8px;
+.card_project_img{
+    width: 100%;
+    text-align: center;
 }
 
-.card-links a:hover{
-    color: #B5E61D
+.card_project_img img{
+    width: 96%;
+    border-radius: 8px;
+    max-height: 176px;
+}
+
+.card_project_about{
+    width: 100%;
+    padding-left: 2vw;
+}
+
+.card_project_about h3{
+    font-weight: bold;
+}
+
+.card_project_about p{
+    color: #7d7f74;
 }
 
 .portfolio-more{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.portfolio-more span{
-    height: 40px;
-    width: 150px;
+    width: 100%;
     font-size: 20px;
+    text-align: center;
+    margin: 8vh 0 8vh 0;
 }
 
 /* RODAPÉ  */
-footer{
-    height: 70vh;
-}
-
 .footer-menu{
     background-color: #262626;
-    height: 80%;
+    padding: 8vh 0 8vh 0;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,25 +459,11 @@ footer{
     color: white;
 }
 
-.footer-menu img{
+.footer-img{
     height: 30vh;
     width: auto;
     margin-left: 5vw;
     margin-right: 3vw;
-}
-
-.footer-contacts{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-
-.footer-contacts span a{
-    margin-right: 20vw;
-    color: white;
-    font-weight: bolder;
 }
 
 .icon-social-media{
@@ -459,10 +474,29 @@ footer{
 }
 
 .icon-social-media:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
+}
+
+.footer-contacts{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer-contacts span a{
+    color: #fff;
+    font-weight: bolder;
 }
 
 @media screen and (min-device-width: 500px) and (max-device-width: 800px){
+
+    .main-options{
+        justify-content: flex-end;
+        padding-right: 4vw;
+    }
 
     #main-options-menu{
         position:absolute;
@@ -516,8 +550,13 @@ footer{
         margin-top: 10px;
     }
 
+    .welcome-text p{
+        font-size: 20px;
+    }
+
     .body-presentation{
-        flex-direction: column;
+        flex-direction: row-reverse;
+        height: 200vh;
     }
 
     .presentation-about{
@@ -539,8 +578,9 @@ footer{
 
 @media screen and (max-device-width: 500px){
 
-    .main-menu{
-        justify-content: space-evenly
+    .main-options{
+        justify-content: flex-end;
+        padding-right: 4vw;
     }
 
     h1{
@@ -549,14 +589,14 @@ footer{
 
     #main-options-menu{
         position:absolute;
-        top: 90px;
+        top: 50px;
         left: -100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
         width: 100%;
-        background: #7d7f74;
+        background: #B5E61D;
         border-bottom: #B5E61D solid 2px;
         transition: .1s;
     }
@@ -576,9 +616,9 @@ footer{
         font-size: 16px;
     }
 
-    .main-logo{
-        margin-right: 26vw;
-    }
+    /* .main-logo{
+        margin-right: 80vw;
+    } */
 
     .main-options-hamburguer{
         display: block;
@@ -605,7 +645,7 @@ footer{
     }
 
     .welcome-text p{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .welcome-text span{
@@ -657,4 +697,29 @@ footer{
     
 }
 
+@keyframes float {
 
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }  
+}
+
+@keyframes top_to_bottom {
+
+    0%{
+        transform: translateY(-60px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}
