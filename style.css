@@ -403,10 +403,12 @@ header{
     align-items: center;
     justify-content: center;   
     border: 1px solid #ccc; 
+    cursor: pointer;
+    transition: .3s;
 }
 
 .card_project:hover{
-    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .card_project_img{
