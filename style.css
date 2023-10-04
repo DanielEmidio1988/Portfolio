@@ -303,8 +303,32 @@ header{
     background: #B5E61D;
 }
 
+.bar-progress-BootStrap{
+    width: 70%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-AppScript{
+    width: 80%;
+    height: 100%;
+    background: #B5E61D;
+}
+
 .bar-progress-TypeScript{
     width: 70%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-HubSpotCMS{
+    width: 70%;
+    height: 100%;
+    background: #B5E61D;
+}
+
+.bar-progress-WordPress{
+    width: 60%;
     height: 100%;
     background: #B5E61D;
 }
