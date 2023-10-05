@@ -444,6 +444,7 @@ header{
     width: 96%;
     border-radius: 8px;
     max-height: 176px;
+    object-fit: cover;
 }
 
 .card_project_about{
