@@ -1,0 +1,37 @@
+.animation{
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: .3s all ease;
+}
+
+.animation-on{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+@keyframes float {
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }  
+}
+
+@keyframes top_to_bottom {
+
+    0%{
+        transform: translateY(-60px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}

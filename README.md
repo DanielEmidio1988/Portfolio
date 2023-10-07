@@ -1,6 +1,8 @@
 # Portfólio Pessoal
 
-![preview](./assets/Icon-readme.png)
+<div align="center">
+    <img src="./assets/Icon-readme.png" style="border-radius: 50%;" alt="logo Daniel Emidio">
+</div>
 
 ## 📖 Introdução 
 
@@ -24,4 +26,3 @@ Muito prazer! Este é meu portfólio pessoal, onde você pode acompanhar meus pr
 emidio.daniel@hotmail.com
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielemidio1988/)
-[![Codewars](https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=Codewars&logoColor=white)](https://www.codewars.com/users/DanielEmidio1988)

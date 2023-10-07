@@ -11,21 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <div class="container-on" id="container">
     <header>
         <!-- Fundo Escuro -->
-        <div class="main-menu">
-            <section class="main-logo">
-
+        <nav class="main-menu vt-inner-padding-min">
+            <div class="main-logo ht-inner-padding-min">
                 <img src="./assets/logo-top-light.svg" alt="logo-daniel-emidio" class="on" id="iconLamp" onclick="ligaDesliga(event)">
-            </section>
-            <section class="main-options">
+            </div>
+            <nav class="main-options">
                 <ul id="main-options-menu">
+                    <li><a class="menu-link" href="#id-welcome">Inicio</a></li>
                     <li><a class="menu-link" href="#id-about">Sobre</a></li>
                     <li><a class="menu-link" href="#id-experience">Experiência</a></li>
                     <li><a class="menu-link" href="#id-portfolio">Portfólio</a></li>
@@ -36,16 +35,15 @@
                     <span class="hamburguer"></span>
                     <span class="hamburguer"></span>
                 </div>
-
-            </section>
-        </div>
+            </nav>
+        </nav>
     </header>
 
-    <div class="container-main">
+    <main class="container-main">
         <!-- SEÇÃO DE BOAS VINDAS -->
         <section class="body-welcome" id="id-welcome">
             <div class="welcome-text">
-            <p class="textoOn" id="texto">Olá! Meu nome é</p><p><H1 class="h1On" id="h1">Daniel Emidio,</H3></p> <p class="textoOn" id="texto">sou desenvolvedor web fullstack, gosto de encarar desafios e agregar valor aos projetos em que trabalho. Explore aqui meus trabalhos mais recentes. </p>
+                <h3 class="textoOn" id="texto">Olá! Meu nome é</h3><p><h1 class="h1On" id="h1">Daniel Emidio</h1></p> <h3 class="textoOn" id="texto">sou desenvolvedor web fullstack, gosto de encarar desafios e agregar valor aos projetos em que trabalho. Explore aqui meus trabalhos mais recentes. </h3>
             <button onclick="scrollToSection('id-about')" class="button-to-presentation">Muito prazer! ツ</button>
             </div>
             <div class="welcome-photo">
@@ -54,8 +52,8 @@
         </section>
 
         <!-- SEÇÃO DE APRESENTAÇÃO PROFISSIONAL -->
-        <section class="body-presentation" id="id-about">
-            <div class="presentation-about" data-anime="left">
+        <section class="body-presentation vt-inner-padding-md" id="id-about">
+            <div class="presentation-about animation ht-inner-padding-md" id="presentation-about">
                 <h2>Quem sou eu?</h2> </br>
                 <h3>Um pouco sobre mim</h3>         
                 <p>
@@ -68,151 +66,36 @@
                     Gosto de trabalhar em ambientes desafiadores, onde eu possa me desenvolver, da mesma forma que eu possa agregar valor as pessoas ao meu redor.
                 </p>          
             </div>
-            <div class="presentation-photo" data-anime="right">
+            <div class="presentation-photo animation" id="presentation-photo">
                 <img src="./assets/foto-perfil-daniel.png" alt="foto-daniel-emidio">
             </div>
         </section>
 
         <!-- SEÇÃO DE EXPERIÊNCIA PREVIA -->
-        <section class="body-experience" id="id-experience">
-
-                <div class="experience-logo" data-anime="left">
+        <section class="body-experience vt-inner-padding-sm" id="id-experience">
+                <div class="experience-logo animation section-title vt-inner-padding-sm" id="experience-logo">
                     <h2>Minhas Experiências</h2>
                     <h3>Um breve resumo sobre minha jornada ao longo da minha carreira</h3>
                 </div>
                 <div class="experience-menu">
 
                     <div class="box-skills">
-                        <h3 data-anime="bottom">Minhas Skills</h3>
-                        <p data-anime="bottom">Minhas principais habilidades técnicas</p>
-                        <div class="skills-info" data-anime="bottom">
-                            
-                            <div class="skill" data-anime="bottom">
-                                <p>HTML</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-HTML">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>CSS</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-CSS">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>JavaScript</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-JavaScript">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>BootStrap</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-BootStrap">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>Google AppScript</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-AppScript">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>TypeScript</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-TypeScript">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>HubSpot CMS</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-HubSpotCMS">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>WordPress</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-WordPress">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>ReactJs</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-ReactJs">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>NextJs</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-NextJs">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>MongoDB</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-MongoDB">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>SQLite</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-SQLite">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>Jest</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-Jest">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill" data-anime="bottom">
-                                <p>Java</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-Java">
-                                    </div>
-                                </div> 
-                            </div>
-
-                            <div class="skill" data-anime="bottom">                                  
-                                <p>Kotlin</p>
-                                <div class="bar-progress">
-                                    <div class="bar-progress-Kotlin">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="section-title animation" id="box-skills-title">
+                            <h3>Minhas Skills</h3>
+                            <p>Minhas principais habilidades técnicas</p>
+                        </div>
+                        
+                        <div class="skills-info animation" id="skills-info">                           
                       
                         </div>
                     </div>
 
-                    <div class="box-experience" loading="lazy">
-                        <h3 data-anime="left">Minhas experiências</h3>
-                        <p class="subtitle-experience" data-anime="left">Minha jornada profissional como desenvolvedor</p>
+                    <section class="box-experience animation" id="box-experience">
+                        <div class="section-title vt-inner-padding-sm" >
+                            <h3 data-anime="left">Minhas experiências</h3>
+                            <p class="subtitle-experience" data-anime="left">Minha jornada profissional como desenvolvedor</p>
+                        </div>
+                        
 
                         <div class="experience-info" data-anime="bottom">
                             <h3>Desenvolvedor FrontEnd Jr <span>@Agencia Inbound</span></h3>
@@ -234,7 +117,7 @@
                             <br>
                             <p>Trabalhei com a oferta de serviços como desenvolvimento de aplicações e páginas web, correção, suporte, entre outros, com foco em Front-End, conforme demanda do cliente utilizando tecnologias Javascript, CSS, HTML, ReactJs.</p>
                          </div>
-                    </div>
+                    </section>
                    
                 </div>
         </section>
@@ -242,84 +125,24 @@
         <!-- SEÇÃO PARA APRESENTAÇÃO DO PORTFÓLIO -->
         <section class="body-portfolio" id="id-portfolio">
             <div class="portfolio-main-projects">
-                <div class="main-projects-logo" data-anime="bottom">
+                <div class="main-projects-logo section-title vt-inner-padding-sm animation" id="portfolio-title">
                     <h2>Principais Projetos</h2>
                     <h3>Alguns dos meus projetos pessoais</h3>
                 </div>
-                <div class="main-projects-options">
-
-                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/unycos', '_blank')" data-anime="bottom">
-                        <div class="card_project_img">
-                            <img src="./assets/layoutUnycos.png" alt="projeto "/>
-                        </div>
-                        <div class="card_project_about">
-                            <h3>LP - Unycos</h3>
-                            <p>FrontEnd</p>
-                        </div>
-                    </div>
-
-                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/athena', '_blank')" data-anime="bottom">
-                        <div class="card_project_img">
-                            <img src="./assets/layoutAthena.png" alt="projeto "/>
-                        </div>
-                        <div class="card_project_about">
-                            <h3>Athena</h3>
-                            <p>FrontEnd</p>
-                        </div>
-                    </div>
-
-                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/dFood', '_blank')" data-anime="bottom">
-                        <div class="card_project_img">
-                            <img src="./assets/layoutDFood.png" alt="projeto "/>
-                        </div>
-                        <div class="card_project_about">
-                            <h3>dFood</h3>
-                            <p>BackEnd</p>
-                        </div>
-                    </div>
-
-                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/Labeddit-FrontEnd', '_blank')" data-anime="bottom">
-                        <div class="card_project_img">
-                            <img src="./assets/layoutLabeddit.png" alt="projeto "/>
-                        </div>
-                        <div class="card_project_about">
-                            <h3>Labeddit</h3>
-                            <p>FullStack</p>
-                        </div>
-                    </div>
-
-                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/yu-gi-oh-shop-card', '_blank')" data-anime="bottom">
-                        <div class="card_project_img">
-                            <img src="./assets/layoutYGOShop.png" alt="projeto "/>
-                        </div>
-                        <div class="card_project_about">
-                            <h3>Yu-gi-oh Card Shop</h3>
-                            <p>FullStack</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card_project" onclick="window.open('https://github.com/DanielEmidio1988/pokedex', '_blank')" data-anime="bottom">
-                        <div class="card_project_img">
-                            <img src="./assets/layoutPokedex.png" alt="projeto "/>
-                        </div>
-                        <div class="card_project_about">
-                            <h3>Pokedex</h3>
-                            <p>FrontEnd</p>
-                        </div>
-                    </div>
+                <div class="main-projects-options vt-inner-padding-sm animation" id="main-projects-options">
 
                 </div>
-                <div class="portfolio-more" data-anime="bottom">
-                    <a href="https://github.com/DanielEmidio1988" target="_blank">Veja mais projetos</a>
+                <div class="portfolio-more vt-inner-padding-sm section-title animation" id="portfolio-cta">
+                    <a href="https://github.com/DanielEmidio1988" target="_blank"><h3>Veja mais projetos</h3></a>
                 </div>
             </div>
         </section>
 
     </div>
 
-    <footer>
+    <footer class="footer animation" id="footer">
        
-        <div class="footer-menu" id="id-contact">
+        <div class="footer-menu vt-inner-padding-md" id="id-contact">
             <img class="footer-img" src="./assets/logo-footer.png" alt="foto-logo-meus-contatos">
             <ul>
                 <li class="footer-text"><h2>Vamos conversar?</h3></li>

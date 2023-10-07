@@ -1,0 +1,21 @@
+@import url('./variables.css');
+
+button{
+    height: 60px;
+    width: 220px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.button-to-presentation{
+    font-size: var(--h3-size);
+    border-color: var(--primary-color);
+    background:var(--primary-color);
+    margin-top: 4vh;
+}
+
+.button-to-presentation:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}

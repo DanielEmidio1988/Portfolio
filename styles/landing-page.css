@@ -1,0 +1,267 @@
+@import url('./variables.css');
+@import url('./animations.css');
+
+.body-welcome{
+    justify-content:space-evenly;
+    height: 100vh;
+}
+
+.body-portfolio, .body-experience{
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.body-welcome .welcome-text{
+    width: 50%;
+    min-width: 450px;
+}
+
+.body-welcome .welcome-photo img{
+    width: 290px;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.body-presentation{
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+    color: var(--dark);
+}
+
+.body-presentation .presentation-about,
+.body-presentation .presentation-photo{
+    display: flex;
+    width: 50%;
+    min-width: 350px;
+}
+
+.body-presentation .presentation-about{
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.body-presentation .presentation-about h3,
+.body-presentation .presentation-about p{
+    margin-bottom: 4vh;
+}
+
+.body-presentation .presentation-photo{
+    justify-content: center;
+    align-items: center;
+}
+
+.body-presentation .presentation-photo img{
+    min-width: 320px;
+    width: 56%;
+    border: 8px solid var(--white);
+    box-shadow: 6px 6px 1px var(--primary-color);
+    border-radius: 8px;
+}
+
+.body-experience .experience-menu .box-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body-experience .experience-menu .box-skills .skills-info{
+    width: 50%;
+    min-width: 350px;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill p{
+    margin-bottom: 1vh;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress{
+    height: 4px;
+    width: 100%;
+    background: var(--dark);
+    margin-bottom: 2vh;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bg-bar-progress{
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-HTML{
+    width: 90%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-CSS{
+    width: 90%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-JavaScript{
+    width: 80%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-BootStrap{
+    width: 70%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-AppScript{
+    width: 80%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-TypeScript{
+    width: 70%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-HubSpotCMS{
+    width: 70%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-WordPress{
+    width: 60%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-ReactJs{
+    width: 80%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-NextJs{
+    width: 60%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-MongoDB{
+    width: 60%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-SQLite{
+    width: 70%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-Jest{
+    width: 50%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-Java{
+    width: 40%;
+}
+
+.body-experience .experience-menu .box-skills .skills-info .skill .bar-progress .bar-progress-Kotlin{
+    width: 40%;
+}
+
+.body-experience .box-experience{
+    flex-direction: column;
+}
+
+.body-experience .box-experience .experience-info{
+    width: 50%;
+    min-width: 350px;
+    margin-bottom: 8vh;
+}
+
+.body-experience .box-experience .experience-info h3 span{
+    color: var(--primary-color);
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project{
+    width: 380px;
+    height: 260px;
+    box-shadow: 4px 4px 1px var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    border: 1px solid var(--gray); 
+    cursor: pointer;
+    transition: .3s;
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project:hover{
+    transform: scale(1.1);
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img{
+    width: 100%;
+    text-align: center;
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img img{
+    width: 96%;
+    border-radius: 8px;
+    max-height: 176px;
+    object-fit: cover;
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_about{
+    width: 100%;
+    padding-left: 2vw;
+}
+
+.body-portfolio .portfolio-main-projects .main-projects-options .portfolio-more{
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width: 800px){
+    .body-welcome{
+        flex-direction: column-reverse;
+        margin: 24vh 0;
+    }
+
+    .body-welcome .welcome-text{
+        justify-content: center;
+    }
+
+    .body-presentation{
+        flex-direction: row-reverse;
+    }
+
+    .body-presentation .presentation-about{
+        min-width: 500px;
+    }
+
+    .body-presentation .presentation-photo{
+        width: 60vw;
+    }
+
+    .body-presentation .presentation-photo img{
+        width: 80vw;
+    }
+}
+
+@media(max-width:500px){
+    .body-welcome .welcome-text{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .body-welcome .welcome-text span{
+        height: 70px;
+        width: 200px;
+        align-items: center;
+        justify-content: center;     
+    }
+
+    .body-presentation{
+        flex-direction: column;
+    }
+
+    .body-presentation .presentation-about{
+        min-width: 360px;
+    }
+
+    .body-presentation .presentation-photo{
+        width: 60vw;
+    }
+
+    .body-presentation .presentation-photo img{
+        width: 80vw;
+    }
+
+}
